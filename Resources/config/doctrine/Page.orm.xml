@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                   https://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+
+	<entity name="SFL\PageBundle\Entity\Page" table="sfl_page">
+	
+		<lifecycle-callbacks>
+			<lifecycle-callback type="prePersist" method="onPrePersist"/>
+			<lifecycle-callback type="preUpdate" method="onPreUpdate"/>
+		</lifecycle-callbacks>
+
+		<id name="id" type="integer" column="id" >
+			<generator strategy="AUTO" />
+		</id>
+
+		<field name="url" column="url" type="string" nullable="false" unique="true" />
+		
+		<field name="published" column="is_published" type="boolean" nullable="false"/>
+		
+		<field name="level" column="level" type="integer" />
+		
+		<field name="title" column="title" type="string" />		
+
+		<field name="content" column="content" type="text" />
+		
+		<field name="layout" column="layout" type="string" nullable="true"/>
+<!-- 
+		<field name="createDate" column="create_date" type="datetime" nullable="false" />
+		
+		<field name="updateDate" column="update_date" type="datetime" nullable="true" />		
+ -->
+	</entity>
+
+</doctrine-mapping>
