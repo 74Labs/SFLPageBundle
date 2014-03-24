@@ -1,0 +1,19 @@
+{
+    "name": "seventyfourlaboratories/page-bundle",
+    "description": "Page bundle for Symfony2",
+    "keywords": ["page", "gdata"],
+    "homepage": "http://github.com/SeventyFourLaboratories/SFLPageBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [{
+        "name" : "Seventy Four Laboratories",
+        "homepage": "http://74labs.com"
+    }],
+    "require": {
+        "symfony/framework-bundle": ">=2.4"
+    },
+    "autoload": {
+        "psr-0": { "SFL\\PageBundle\\": "" }
+    },
+    "target-dir" : "SFL/PageBundle"
+}
