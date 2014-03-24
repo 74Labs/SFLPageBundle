@@ -1,7 +1,7 @@
 {
     "name": "seventyfourlaboratories/page-bundle",
     "description": "Page bundle for Symfony2",
-    "keywords": ["page", "gdata"],
+    "keywords": ["page"],
     "homepage": "http://github.com/SeventyFourLaboratories/SFLPageBundle",
     "type": "symfony-bundle",
     "license": "MIT",
