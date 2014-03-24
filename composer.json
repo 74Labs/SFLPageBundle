@@ -13,7 +13,7 @@
         "symfony/framework-bundle": ">=2.4"
     },
     "autoload": {
-        "psr-0": { "SFL\\PageBundle\\": "" }
+        "psr-0": { "SFL\\PageBundle": "" }
     },
     "target-dir" : "SFL/PageBundle"
 }
